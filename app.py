@@ -13,23 +13,26 @@ def get_tweets(username: str):
 
     timestamp = datetime.datetime.now().timestamp()
     filename = f"{username}-{timestamp}.txt".lower()
+    with open(PATH + filename, 'w') as f:
+        f.write(json.dumps(data, ensure_ascii=False))
+
     result = []
     for tweet in data['timeline']:
         published_at = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
-        author = data['user']['name']
+        author = data['user']['profile']
         quoted = tweet.get('quoted', None)
         # 如果有引用的话，就把引用的内容也加进去
         content = tweet['text'] if not quoted else f"{tweet['text']} Quoted:({quoted['text']})"
         content = clean(content, extra_whitespace=True, dashes=True, bullets=True, lowercase=True)
+        tweet_id = tweet['tweet_id']
 
         item = {
+            "tweet_id": tweet_id,
             "author": author,
             "published_at": published_at.strftime("%Y-%m-%d %H:%M:%S"),
             "content": str(content)
         }
         result.append(item)
-    with open(PATH + filename, 'w') as f:
-        f.write(json.dumps(result, ensure_ascii=False))
     return result
 
 
@@ -47,5 +50,5 @@ def main(username: str, analyze_type: str = 'summarize'):
 
 
 if __name__ == "__main__":
-    result = main(username="hellosuoha", analyze_type="token")
+    result = main(username="xiaomucrypto", analyze_type="explore")
     print(result)
