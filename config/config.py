@@ -1,5 +1,8 @@
 import yaml
 
+from constant import PROJECT_PATH
+
+
 class AppConfig:
     def __init__(self, config_file):
         with open(config_file, 'r') as stream:
@@ -11,6 +14,7 @@ class AppConfig:
     def get_all(self):
         return self.config
 
-configPath = 'config/local.yaml'
+
+configPath = PROJECT_PATH + '/config/local.yaml'
 
 appConfig = AppConfig(configPath)
