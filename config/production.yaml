@@ -1,0 +1,5 @@
+rapidapi:
+  key: ""
+  host: "twitter-api45.p.rapidapi.com"
+  url: "https://twitter-api45.p.rapidapi.com/timeline.php"
+  screenname: ""

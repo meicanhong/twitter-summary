@@ -1,0 +1,11 @@
+{'author': '知识分享官', 'created_at': 'Tue Feb 20 09:08:21 +0000 2024', 'text': '别浪费时间自己手动撸了，这7个VSCode插件简化您的编码工作流程,让你的效率直线起飞！\n\n众所周知，VSCode是一个非常受欢迎的编程编辑器，你可以把它想象成一个超级高级的记事本，专门用来写电脑程序。它本身就很强大，但最酷的部分是插件，今天我精选了7个最常用也最实用的插件分享给大家👇🧵 https://t.co/3muW9YU4nY'}
+{'author': '知识分享官', 'created_at': 'Tue Feb 20 09:08:26 +0000 2024', 'text': '6: HTML CSS Support\nhttps://t.co/EyrqIuTJ13\n当你在写网页代码，特别是HTML和CSS时，这个插件可以帮你自动完成很多工作。比如，当你在HTML文件里写标签想要引用CSS样式时，它会提示你所有可用的CSS类名和ID，这样你就不用记住它们或来回切换文件查找了。它还可以帮助你快速插入CSS样式属性和值。'}
+{'author': '知识分享官', 'created_at': 'Tue Feb 20 09:08:26 +0000 2024', 'text': '10: Path Intellisense\nhttps://t.co/GtreIAJGOf\n这个插件就像是编写代码时的智能路标。当你在代码中输入文件路径，比如链接到图片或者其他文件时，这个插件会自动显示出所有可用的文件和文件夹列表，帮你快速找到和插入正确的路径，让编写代码更加流畅快速，减少了错误和打字的麻烦。 https://t.co/GeXZeUqbpi'}
+{'author': '知识分享官', 'created_at': 'Tue Feb 20 08:01:44 +0000 2024', 'text': '没事学点编程小知识：\n如何用python获取cpu温度 https://t.co/E6eAeorgQJ'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 14:49:39 +0000 2024', 'text': 'RT @knowledgefxg: 想白嫖Adobe软件的有福了！\n2024 Adobe CC是一个个人网站，专门收集最新版Adobe全家桶和Adobe CC 2024的破解版。该网站提供了包括Photoshop、Illustrator、InDesign、Premiere Pr…'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 14:40:15 +0000 2024', 'text': '没事来点硬核小知识：\n我们经常吃的科技产品配料表里面化学元素的作用及长期食用的危害(第二期）\n上次以方便面为例子，这次我们来科普一下其他常见的元素周期表组合，这里以我们经常吃的某品牌火腿肠为例子来学习下化学老师不教的那些小知识。… https://t.co/Q0eLZCD9AD'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 13:48:19 +0000 2024', 'text': '冷知识：国内10家牛逼哄哄AI大模型都叫什么名字 https://t.co/At7mP9B9Ka'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 13:00:33 +0000 2024', 'text': '关于网络安全方面必看的5个GitHub库🧵👇 https://t.co/tZTIEBgUrg'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 13:00:36 +0000 2024', 'text': '5: Personal Security Checklist\n项目是一个教你怎么保护数字生活安全的超级清单。这个列表上有300多条建议，涉及密码管理、信息加密和安全上网等，可以帮助你避免被黑客攻击或个人信息泄露。想要按部就班提升网络安全意识的朋友，这个项目挺适合的。\nhttps://t.co/l90CtKshy1'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 13:00:37 +0000 2024', 'text': '结语：\n网络安全的世界每天都在变，新的技术、新的威胁层出不穷。所以，把这五个GitHub项目仓库收藏好，定期去看看它们有没有更新，就像定期检查你的赛车一样，确保它总是在最佳状态。让我们用这些资源武装自己吧！'}
+{'author': '知识分享官', 'created_at': 'Mon Feb 19 11:55:31 +0000 2024', 'text': '没事学点英语小知识：\n各种颜色的英文表达👇 https://t.co/5QM16b1YHo'}
