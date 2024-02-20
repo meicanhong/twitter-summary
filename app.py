@@ -1,6 +1,7 @@
 import json
 
 from constant import PATH
+from util.openai_util import chat_response
 from util.twitter_util import pull_tweets
 import datetime
 from unstructured.cleaners.core import clean
@@ -31,9 +32,20 @@ def get_tweets(username: str):
     return result
 
 
+def summarize_tweets(data):
+    prompt = f"""
+You are a daily crypto Twitter Key Opinion Leader (KOL) summary. I will provide you with tweets, and you need to generate a daily report:
+
+Tweet:
+{data}
+    """
+    return chat_response(prompt)
+
 def main(username):
-    get_tweets(username)
+    tweets = get_tweets(username)
+    return summarize_tweets(tweets)
 
 
 if __name__ == "__main__":
-    main(username="Phyrex_Ni")
+    result = main(username="Phyrex_Ni")
+    print(result)
