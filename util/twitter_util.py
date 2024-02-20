@@ -2,10 +2,11 @@ import requests
 
 from config.config import appConfig
 
-def get_tweets(screenname):
+
+def pull_tweets(screenname):
     url = appConfig.get('rapidapi').get('url')
 
-    querystring = {"screenname":screenname}
+    querystring = {"screenname": screenname}
 
     headers = {
         "X-RapidAPI-Key": appConfig.get('rapidapi').get('key'),
