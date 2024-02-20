@@ -1,6 +1,7 @@
 import json
 
 from constant import PATH
+from prompt import prompt_dict
 from util.openai_util import chat_response
 from util.twitter_util import pull_tweets
 import datetime
@@ -32,20 +33,19 @@ def get_tweets(username: str):
     return result
 
 
-def summarize_tweets(data):
-    prompt = f"""
-You are a daily crypto Twitter Key Opinion Leader (KOL) summary. I will provide you with tweets, and you need to generate a daily report:
-
-Tweet:
-{data}
-    """
+def summarize_tweets(tweets, analyze_type: str = "summarize"):
+    prompt = prompt_dict[analyze_type].format(tweets=tweets)
     return chat_response(prompt)
 
-def main(username):
+
+def main(username: str, analyze_type: str = 'summarize'):
+    if analyze_type not in prompt_dict:
+        raise ValueError(f"Invalid analyze_type. Expected one of {list(prompt_dict.keys())}, but got {analyze_type}")
+
     tweets = get_tweets(username)
-    return summarize_tweets(tweets)
+    return summarize_tweets(tweets, analyze_type=analyze_type)
 
 
 if __name__ == "__main__":
-    result = main(username="Phyrex_Ni")
+    result = main(username="hellosuoha", analyze_type="token")
     print(result)
