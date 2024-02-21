@@ -1,5 +1,4 @@
 import json
-import os
 
 from constant import PATH
 from prompt import prompt_dict
@@ -34,12 +33,6 @@ def get_tweets(username: str):
             "content": str(content)
         }
         result.append(item)
-    
-    if not os.path.exists(PATH):
-        os.makedirs(PATH)
-        
-    with open(PATH + filename, 'w') as f:
-        f.write(json.dumps(result, ensure_ascii=False))
     return result
 
 
