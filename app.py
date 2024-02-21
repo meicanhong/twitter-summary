@@ -1,6 +1,7 @@
 import json
+import os
 
-from constant import PATH
+from constant import TWEET_RAW_PATH
 from prompt import prompt_dict
 from util.openai_util import chat_response
 from util.twitter_util import pull_tweets
@@ -13,7 +14,10 @@ def get_tweets(username: str):
 
     timestamp = datetime.datetime.now().timestamp()
     filename = f"{username}-{timestamp}.txt".lower()
-    with open(PATH + filename, 'w') as f:
+
+    if not os.path.exists(TWEET_RAW_PATH):
+        os.makedirs(TWEET_RAW_PATH)
+    with open(TWEET_RAW_PATH + filename, 'w') as f:
         f.write(json.dumps(data, ensure_ascii=False))
 
     result = []
